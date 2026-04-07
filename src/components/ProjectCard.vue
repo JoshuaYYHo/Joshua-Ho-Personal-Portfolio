@@ -15,11 +15,11 @@ defineProps({
 <template>
     <div class="main-card">
         <div class="header-card">
-            {{ header }}
+            <h2>  {{ header }} </h2>
         </div>
 
         <div class="body-card">
-            {{ description }}
+            <p> {{ description }} </p>
         </div>
 
         <div class="tech-stack">
@@ -32,8 +32,11 @@ defineProps({
 <style scoped>
 
 .main-card {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 160px;
+    padding: 1rem 1.5rem;
+    border: 2px solid #F5E9DA;
+    border-radius: 5%;
 }
 
 

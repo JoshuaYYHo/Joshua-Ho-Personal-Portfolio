@@ -20,7 +20,7 @@ import ProjectCard from './components/ProjectCard.vue';
     <section id="work">
       <h1> My Work </h1>
       <div class="card-section">
-        <ProjectCard />
+        <ProjectCard header="Example Title" description="Example Description" />
 
       </div>
       

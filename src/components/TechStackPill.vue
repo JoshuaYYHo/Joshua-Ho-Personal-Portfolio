@@ -15,13 +15,16 @@ defineProps({
 </template>
 
 <style scoped>
+
+:root {
+    --border-color: WHITE_TEXT;
+}
+
 .pill {
     border-radius: 10px;
     padding: 6px 10px;
     display: inline-block;
     background: transparent;
-    color: var(--pill-color);
-    border: 2px solid var(--pill-color);
-
+    border: 2px solid #F5E9DA;
 }
 </style>
