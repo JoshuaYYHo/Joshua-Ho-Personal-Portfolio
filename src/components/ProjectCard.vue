@@ -39,5 +39,4 @@ defineProps({
     border-radius: 5%;
 }
 
-
 </style>

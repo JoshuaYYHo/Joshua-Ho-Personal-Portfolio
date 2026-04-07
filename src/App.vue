@@ -13,7 +13,15 @@ import ProjectCard from './components/ProjectCard.vue';
   <main>
 
     <section id="home">
-      <h1> About Me </h1>
+      <h1> Joshua Ho </h1>
+      <p> Hello, my name is Joshua and I currently live in the Bay Area developing software for the government. </p>
+
+      <div class="professional-links">
+        <a href="https://github.com/JoshuaYYHo"> Github </a>
+        <a href="https://www.linkedin.com/in/joshuayyho/"> LinkedIn </a>
+        <a href="mailto:joshua.yuyaw.ho@gmail.com"> Email </a>
+
+      </div>
 
     </section>
 
@@ -46,11 +54,26 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem 1.5rem;
+  margin: 1rem 1.5rem;
 }
 
 .card-section {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.professional-links {
+  display: flex;
+  justify-content: center;
+}
+
+.professional-links a {
+  text-decoration: none;
+}
+
+.professional-links a:hover {
+  text-decoration: none;
 }
 </style>
