@@ -50,7 +50,7 @@ const my_works = [
         </div>
 
         <div class="linkedin-button">
-          linkedin
+          linkedIN
         </div>
 
       </div>

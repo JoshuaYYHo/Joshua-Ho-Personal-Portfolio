@@ -29,7 +29,7 @@ defineProps({
             </div>
 
             <div class="github-pill">
-                <p> -> Github </p>
+                <TechStackPill name="Github" />
             </div>
         </div>
 
@@ -50,10 +50,12 @@ defineProps({
     display: flex;
     gap: 1rem;
     align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .bottom-card div {
-    padding: 1rem 1.5rem;
+    padding: 0;
     margin: 0;
 }
 </style>
