@@ -4,6 +4,13 @@ import NavBar from './components/NavBar.vue';
 import ProjectCard from './components/ProjectCard.vue';
 
 // JSON for the My Work section
+const my_works = [
+  {
+    header: "Example",
+    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus."
+
+  }
+]
 
 </script>
 
@@ -36,6 +43,18 @@ import ProjectCard from './components/ProjectCard.vue';
 
     <section id="contact">
       <h1> Contact Me </h1>
+
+      <div class="contact-buttons">
+        <div class="email-button"> 
+          email
+        </div>
+
+        <div class="linkedin-button">
+          linkedin
+        </div>
+
+      </div>
+
     </section>
 
 
@@ -84,5 +103,15 @@ section {
 
 .professional-links a:hover {
   text-decoration: none;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-buttons div {
+  padding: 1rem 1.5rem;
+  margin: 1rem 1.5rem;
 }
 </style>

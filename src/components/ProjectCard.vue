@@ -15,22 +15,29 @@ defineProps({
 <template>
     <div class="main-card">
         <div class="header-card">
-            <h2>  {{ header }} </h2>
+            <h2> {{ header }} </h2>
         </div>
 
         <div class="body-card">
             <p> {{ description }} </p>
         </div>
 
-        <div class="tech-stack">
-            <TechStackPill name="React"/>
+
+        <div class="bottom-card">
+            <div class="tech-stack">
+                <TechStackPill name="React" />
+            </div>
+
+            <div class="github-pill">
+                <p> -> Github </p>
+            </div>
         </div>
+
     </div>
 
 </template>
 
 <style scoped>
-
 .main-card {
     width: 280px;
     height: 160px;
@@ -39,4 +46,14 @@ defineProps({
     border-radius: 5%;
 }
 
+.bottom-card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.bottom-card div {
+    padding: 1rem 1.5rem;
+    margin: 0;
+}
 </style>
