@@ -17,8 +17,8 @@ import ProjectCard from './components/ProjectCard.vue';
       <p> Hello, my name is Joshua and I currently live in the Bay Area developing software for the government. </p>
 
       <div class="professional-links">
-        <a href="https://github.com/JoshuaYYHo"> Github </a>
-        <a href="https://www.linkedin.com/in/joshuayyho/"> LinkedIn </a>
+        <a target="_blank" href="https://github.com/JoshuaYYHo"> Github </a>
+        <a target="_blank" href="https://www.linkedin.com/in/joshuayyho/"> LinkedIn </a>
         <a href="mailto:joshua.yuyaw.ho@gmail.com"> Email </a>
 
       </div>
@@ -43,6 +43,12 @@ import ProjectCard from './components/ProjectCard.vue';
 
   <Footer />
 </template>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
 
 <style scoped>
 h1 {
@@ -71,6 +77,9 @@ section {
 
 .professional-links a {
   text-decoration: none;
+  color: #F5E9DA;
+  margin: 1rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .professional-links a:hover {

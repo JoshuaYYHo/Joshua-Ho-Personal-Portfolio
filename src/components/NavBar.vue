@@ -3,9 +3,9 @@
 import { DARK_MAIN, WHITE_TEXT } from '@/constants/theme';
 
 const navItems = [
-  { name: "Home" },
-  { name: "Work" },
-  { name: "Contact" }
+  { name: "Home", id: "home" },
+  { name: "Work", id: "work" },
+  { name: "Contact", id: "contact" }
 ];
 
 </script>
@@ -14,7 +14,7 @@ const navItems = [
   <nav class="navbar" :style="{ backgroundColor: DARK_MAIN }">
     <ul class="nav-links">
       <li v-for="item in navItems" :key="item.name">
-        <a :href="`#${item.name}`" :style="{ color: WHITE_TEXT }">{{ item.name }}</a>
+        <a :href="`#${item.id}`" :style="{ color: WHITE_TEXT }">{{ item.name }}</a>
       </li>
     </ul>
   </nav>
